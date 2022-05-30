@@ -33,6 +33,7 @@ const renderAvatar = (user) => {
 // 退出功能
 $('#btnlogout').click(() => {
   layer.confirm('是否退出?', { icon: 3, title: '提示' }, function (index) {
+    // 强制退出
     localStorage.removeItem('token')
     location.href = '/login.html'
   })
