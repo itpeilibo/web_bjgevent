@@ -10,7 +10,7 @@ $(function () {
     $('.reg-box').hide();
   })
   // 引入 form 模块
-  const form = layui.form
+const form = layui.form
   // 获取 layui 弹窗
 const layer = layui.layer
 

@@ -7,7 +7,7 @@ function getUserInfo() {
       //     Authorization: localStorage.getItem("token"),
       // },
       success: (res) => {
-          console.log(res);
+          // console.log(res);
           if (res.status !== 0) return layer.msg("获取用户信息失败！");
         layer.msg("获取用户信息成功！");
         renderAvatar(res.data)
@@ -16,7 +16,7 @@ function getUserInfo() {
 }
 // 渲染用户信息
 const renderAvatar = (user) => {
-  console.log(user);
+  // console.log(user);
   let uname = user.nickname || user.username;
   $('#welcome').html(`欢迎${uname}`)
   // 渲染欢迎语
